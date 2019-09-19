@@ -2,23 +2,23 @@
 
 组件，从概念上类似于 JavaScript 函数。它接受任意的入参（即 “props”），并返回用于描述页面展示内容的 React 元素。
 
-## 通过函数 或 class 定义组件
+## 定义组件：通过函数 或 class
 
 - 通过 JavaScript 函数定义的组件：
 
-        function Welcome(props) {
-            return <h1>Hello, {props.name}</h1>;
-        }
+		function Welcome(props) {
+				return <h1>Hello, {props.name}</h1>;
+		}
 
     该函数接收唯一带有数据的 “props”（代表属性）对象与并返回一个 React 元素。
 
 - 还可以使用 ES6 的 class 来定义组件：
 
-        class Welcome extends React.Component {
-            render() {
-                return <h1>Hello, {this.props.name}</h1>;
-            }
-        }
+		class Welcome extends React.Component {
+			render() {
+				return <h1>Hello, {this.props.name}</h1>;
+			}
+		}
 
 ## 渲染组件
 
@@ -34,13 +34,13 @@
 例如，下面这段代码会在页面上渲染 “Hello, Sara”：
 
     function Welcome(props) {
-        return <h1>Hello, {props.name}</h1>;
+			return <h1>Hello, {props.name}</h1>;
     }
 
     const element = <Welcome name="Sara" />;
     ReactDOM.render(
-        element,
-        document.getElementById('root')
+			element,
+			document.getElementById('root')
     );
 
 ### Props 的只读性

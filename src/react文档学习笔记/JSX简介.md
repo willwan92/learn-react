@@ -54,7 +54,7 @@ JSX，是一个 JavaScript 的语法扩展。它具有 JavaScript 的全部功�
 
     const element = <img src={user.avatarUrl}></img>;
 
-你应该仅使用引号（对于字符串值）或大括号（对于表达式）中的一个，对于同一属性不能同时使用这两种符号。
+对于同一属性不能同时使用这两种符号。
 
 ## 警告：
 

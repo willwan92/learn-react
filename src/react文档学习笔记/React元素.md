@@ -16,7 +16,7 @@
 
 将一个 React 元素渲染到根 DOM 节点中，只需把它们一起传入 ReactDOM.render()：
 
-    onst element = <h1>Hello, world</h1>;
+    const element = <h1>Hello, world</h1>;
     ReactDOM.render(element, document.getElementById('root'));
 
 id 为 root 的 div 称为“根” DOM 节点，因为该节点内的所有内容都将由 React DOM 管理。
