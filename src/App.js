@@ -1,6 +1,8 @@
 import React from 'react';
 
-import FormSample from './form/form';
+import Calculator from './stateUp/temperatureCalclator'
+
+// import FormSample from './form/form';
 
 // import FilterableProductTable from './thinking-in-react/filterableProductTable';
 
@@ -36,8 +38,12 @@ function App() {
   return (
 
     <div>
-      <FormSample />
+      <Calculator />
     </div>
+
+    // <div>
+    //   <FormSample />
+    // </div>
 
 		// <div className="App">
 		// 	<FilterableProductTable products={PRODUCTS} />
