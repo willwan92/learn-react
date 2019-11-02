@@ -1,15 +1,17 @@
 import React from 'react';
 
-import FilterableProductTable from './thinking-in-react/filterableProductTable';
+import FormSample from './form/form';
 
-const PRODUCTS = [
-  {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
-  {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
-  {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
-  {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
-  {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
-  {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
-];
+// import FilterableProductTable from './thinking-in-react/filterableProductTable';
+
+// const PRODUCTS = [
+//   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+//   {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+//   {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+//   {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+//   {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+//   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+// ];
 
 // import CommentList from './commont-box/CommentList';
 // import CommentForm from './commont-box/CommentForm';
@@ -32,9 +34,14 @@ const PRODUCTS = [
 
 function App() {
   return (
-		<div className="App">
-			<FilterableProductTable products={PRODUCTS} />
-		</div>
+
+    <div>
+      <FormSample />
+    </div>
+
+		// <div className="App">
+		// 	<FilterableProductTable products={PRODUCTS} />
+		// </div>
 
     // <div className="comment-box">
     //   <h1>Comments(3)</h1>
