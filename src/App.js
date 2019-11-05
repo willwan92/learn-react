@@ -1,6 +1,9 @@
 import React from 'react';
 
-import Calculator from './stateUp/temperatureCalclator'
+import RouterSample from './react-router/RouterSample'
+
+
+// import Calculator from './stateUp/temperatureCalclator'
 
 // import FormSample from './form/form';
 
@@ -36,10 +39,14 @@ import Calculator from './stateUp/temperatureCalclator'
 
 function App() {
   return (
+		
+		<div>
+			<RouterSample />
+		</div>
 
-    <div>
-      <Calculator />
-    </div>
+    // <div>
+    //   <Calculator />
+    // </div>
 
     // <div>
     //   <FormSample />
