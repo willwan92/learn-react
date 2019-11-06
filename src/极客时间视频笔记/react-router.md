@@ -86,6 +86,62 @@ React Router是在页面render的时候才进行解析的，是动态的。如�
 2. HashRouter，根据window.location.hash的改变实现。
 3. MemoryRouter，路由变化不反映在url上，而是在内存中，通常用在服务端渲染等非浏览器环境中。
 
+## 基于路由配置进行资源组织
+
+1. 实现业务逻辑的松耦合
+2. 易于扩展、重构和维护
+3. 路由层面实现 Lazy Load
+
+## React Router API
+
+1. `<Link>`：普通链接，不会触发浏览器刷新
+
+		<Link to="/about">About</Link>
+
+2. `<NavLink>`：类似 `<Link>` 但是会添加当前选中状态
+
+		<NavLink 
+			to="/about"
+			activeClassName="active"
+		>About</NavLink>
+		
+3. `<Prompt>`：满足条件时提示用户是否离开当前页面
+
+		<Prompt 
+			when={formIsHalfFilledOut}
+			message="你确定要离开当前页面吗"
+		>About</Prompt>
+
+4. `<Route>`：路由配置的核心标记，路径匹配时显示对应组件
+
+		<Router>
+			<div>
+				{/* exact: Boolean，是否精确匹配 */}
+				<Route exact path="/" component={Home}>
+				<Route path="/news" component={NewsFeed}>
+			</div>
+		<Router>
+
+5. `<Redirect>`：重定向当前页面，例如登录判断
+		
+		<Route exact path="/" render=(() => {
+			loggedIn ? (
+				<Redirect to="/dashboard" />
+			) : (
+				<PublicHomePage>
+			)
+		})/>
+
+
+7. `<Switch>`：只显示第一个匹配的路由
+
+		<Switch>
+			{/* exact: Boolean，是否精确匹配 */}
+			<Route exact path="/" component={Home}>
+			<Route path="/about" component={About}>
+			<Route path="/:user" component={User}>
+			<Route component={NoMatch}>
+		<Switch>
 
 
 
