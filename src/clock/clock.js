@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './clock.css';
+
 export default class Clock extends Component {
 	constructor(props) {
 		super(props);
@@ -31,7 +33,9 @@ export default class Clock extends Component {
 
 	render() {
 		return (
-			<p>It is {this.state.date.toLocaleTimeString()}.</p>
+			<div className="clock-box">
+				<p>It is {this.state.date.toLocaleTimeString()}.</p>
+			</div>
 		)
 	}
 }

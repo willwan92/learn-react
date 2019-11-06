@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './snapshotSample.css';
+
 export default class SnapshowSample extends Component {
 	constructor(props) {
 		super(props);
@@ -47,11 +49,13 @@ export default class SnapshowSample extends Component {
 	// ref的使用？
 	render() {
 		return (
-			<div 
-				className="message-box"
-				ref={n => this.rootNode = n}
-			>
-				{this.state.messages.map(item => <div>{item}</div>)}
+			<div className="snapshot-sample">
+				<div 
+					className="message-box"
+					ref={n => this.rootNode = n}
+				>
+					{this.state.messages.map(item => <div>{item}</div>)}
+				</div>
 			</div>
 		)
 	}
