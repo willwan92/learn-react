@@ -16,6 +16,10 @@ import FormSample from './form-sample/FormSample'
 import ProductList from './thinking-in-react/ProductList'
 import Clock from './clock/clock.js'
 import SnapShotSample from './snapshot-sample/snapshotSample.js'
+import TabSelectorSample from './tab-selector/TabSelectorSample'
+import ColorSelector from './higher-order-components/ColorSelector'
+
+
 
 const routeMap = {
 	"router-sample": RouterSample,
@@ -25,6 +29,8 @@ const routeMap = {
 	"comment-box": CommentBox,
 	"clock": Clock,
 	"snap-shot-sample": SnapShotSample,
+	"tab-selector-sample":TabSelectorSample,
+	"color-selector": ColorSelector
 }
 
 export default class App extends Component {
