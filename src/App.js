@@ -44,7 +44,10 @@ export default class App extends Component {
 						{
 							routes.map(key => (
 								<li key={key}>
-									<NavLink to={key} activeClassName="active">{key}</NavLink>
+									<NavLink 
+										to={key} 
+										activeClassName="active"
+									>{key}</NavLink>
 								</li>
 							))
 						}

@@ -15,6 +15,10 @@
 	background: #ccc;
 }
 
+.menu-list li {
+	padding-left: 20px;
+}
+
 .menu-list .active {
 	color: #f66;
 }
