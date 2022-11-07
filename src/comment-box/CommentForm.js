@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
-import withTimer from '../higher-order-components/withTimer'
+import withTimer from '../higher-order-components/withTImer'
 
 export class CommentForm extends PureComponent {
 
